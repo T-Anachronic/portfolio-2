@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio qui retrace mon parcours et mon évolution</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <!-- SVG Imported, instead of calling extern APIs -->
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff"
+                    stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff"
+                    stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav" style="list-style-type:none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav" onclick="closeSlideMenu()">
+        <a href="#" class="btn-close">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#section-a">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <header id="showcase">
+        <h1>Welcome to New York</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum doloremque possimus ad magnam, iste velit hic consectetur quasi consequatur.
+            
+        </p>
+
+        <a href="#" class="button">Read more</a>
+
+    </header>
+    <main id="main">
+        <section id="section-a">
+            <h1>Services</h1>
+            <div class="process-1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                temporibus, nihil consequatur.
+            </div>
+            <div class="process-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                temporibus, nihil consequatur.
+            </div>
+            <div class="process-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                temporibus, nihil consequatur.
+            </div>
+        </section>
+        <section id="section-b">
+            <h1>My work</h1>
+            <div class="work">
+            </div>
+        </section>
+        <section id="section-c">
+            <h1>About Me</h1>
+            <div class="about-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                    distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                    quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                    temporibus, nihil consequatur.
+                </div>
+                <div class="about-2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                    distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                    quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                    temporibus, nihil consequatur.
+                </div>
+                <div class="about-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
+                    distinctio sequi quibusdam similique rem obcaecati accusantium error 
+                    quasi autem culpa veniam, est ratione explicabo nulla minus illum 
+                    temporibus, nihil consequatur.
+                </div>
+        </section>
+        <section id="section-d">
+            <h1>Get in touch</h1>
+        </section>
+    </main>
+    <footer>
+        <div id="bottom">
+        </div>
+    </footer>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width
+            ='250px';
+            document.getElementById('main').style.marginRight
+            ='250px';
+        }
+        
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width
+            ='0px';
+            document.getElementById('main').style.marginRight
+            ='0px';
+        }
+    </script>
+</body>
+</html>
