@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 .navbar {
+    /* position: fixed; */
     background-color: #4E49FD;/*#3b5998;*/
     overflow: hidden;
     height: 63px;
@@ -63,17 +64,23 @@ body {
 }
 /* Up-Icon */
 .up-icon {
-	/* background-color: #00d0ff67; */
 	right: 20px;
 	position: fixed; /*Pour sortir l'élément du flux, on peut placer l'élément la ou on souhaite sur le plan vert et hori par rapport au bord de la fenetre*/
     bottom: 0;
     font-size: 3em;
 }
  /* Hero-Section */
+ /* header {
+    
+ } */
  #showcase {
-    /* background-image: url(../images/Webp.net-resizeimage\ \(2\).jpg);
+    background-image: url("../media/Webp.net-resizeimage3.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* opacity: 0.5;
+    filter: alpha(opacity=50);  */
     background-size: cover;
-    background-position: top; */
+    background-position: top;
     background-color: #4E49FD;
     text-align: center;
     height: 100vh;
@@ -83,6 +90,15 @@ body {
     align-items: center;
     padding: 0 40px;   
 }
+/* #showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url("../media/welcome-cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+} */
 /* Stylish */
 #showcase h1 {
     font-size: 50px;
@@ -91,8 +107,14 @@ body {
 }
 #showcase p {
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
     color: azure;
+    padding: 1em 0 3em 0;
+    text-align: right;
+}
+#showcase address {
+    color: azure;
+    text-align: right;
 }
 #showcase .button {
     font-size: 18px;
@@ -102,13 +124,41 @@ body {
     /* border: azure 1px solid; */
     padding: 10px 20px;
     border-radius: 10px 10px 10px 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 #showcase .button:hover {
     background: rgb(2, 170, 125);
     /* color: black; */
     /* box-shadow: 0 10px 80px #F7F7F7; */
 }
+#showcase img {
+    height: auto;
+    width: 10%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+    -moz-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+    box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+}
+q {
+    font-size: 1.5em;
+    color: azure;
+    padding-bottom: 2em;
+}
+.button {
+    padding: 5em;
+}
+/* .content {
+    background-image: url(../media/welcome-cover.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+} */
 /* -----------------------Main stylish------------------------- */
 #main {
     margin-top: 30px;
