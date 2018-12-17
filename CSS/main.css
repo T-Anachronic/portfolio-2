@@ -2,6 +2,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -60,6 +61,14 @@ body {
     font-size: 36px;
     margin-right: 50px;
 }
+/* Up-Icon */
+.up-icon {
+	/* background-color: #00d0ff67; */
+	right: 20px;
+	position: fixed; /*Pour sortir l'élément du flux, on peut placer l'élément la ou on souhaite sur le plan vert et hori par rapport au bord de la fenetre*/
+    bottom: 0;
+    font-size: 3em;
+}
  /* Hero-Section */
  #showcase {
     /* background-image: url(../images/Webp.net-resizeimage\ \(2\).jpg);
@@ -109,13 +118,13 @@ body {
     overflow: hidden;
     /* width: 100%; */
 }
-#section-a, #section-b, #section-c, #section-d {
+#services, #work, #about, #contact {
     height: 100vh;
 }
-#section-b {
+#work {
     background-color: #F7F7F7;
 }
-#section-d {
+#contact {
     background-color: #4E49FD;
 }
 #bottom {

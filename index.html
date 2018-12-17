@@ -7,6 +7,8 @@
     <title>Portfolio qui retrace mon parcours et mon évolution</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.  -->
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <body>
@@ -25,19 +27,19 @@
             </a>
         </span>
         <ul class="navbar-nav" style="list-style-type:none">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
         </ul>
     </nav>
 
     <div id="side-menu" class="side-nav" onclick="closeSlideMenu()">
         <a href="#" class="btn-close">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#section-a">Services</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#work">Portfolio</a>
+        <a href="#about">About</a>
+        <!-- <a href="#">Contact</a> -->
     </div>
 
     <header id="showcase">
@@ -46,11 +48,11 @@
             
         </p>
 
-        <a href="#" class="button">Read more</a>
+        <a href="#contact" class="button">Get in Touch</a>
 
     </header>
     <main id="main">
-        <section id="section-a">
+        <section id="services">
             <h1>Services</h1>
             <div class="process-1">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
@@ -71,12 +73,12 @@
                 temporibus, nihil consequatur.
             </div>
         </section>
-        <section id="section-b">
-            <h1>My work</h1>
+        <section id="work">
+            <h1>Portfolio</h1>
             <div class="work">
             </div>
         </section>
-        <section id="section-c">
+        <section id="about">
             <h1>About Me</h1>
             <div class="about-1">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
@@ -97,12 +99,15 @@
                     temporibus, nihil consequatur.
                 </div>
         </section>
-        <section id="section-d">
+        <section id="contact">
             <h1>Get in touch</h1>
         </section>
     </main>
     <footer>
         <div id="bottom">
+                <div class="up-icon">
+                    <a href="#" title="Haut de page"><i class="fas fa-angle-up"></i></a>
+                </div>
         </div>
     </footer>
     <script>
