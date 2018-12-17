@@ -9,15 +9,13 @@ body {
     overflow-x: hidden;
 }
 .navbar {
-    /* position: fixed; */
-    background-color: #4E49FD;/*#3b5998;*/
     overflow: hidden;
     height: 63px;
 }
 .navbar a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #1b1111;
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
@@ -70,59 +68,56 @@ body {
     font-size: 3em;
 }
  /* Hero-Section */
- /* header {
-    
- } */
- #showcase {
+ /* header  */
+ .content {
+     position: absolute;
+     width: 50%;
+ }
+ .hero-section::after {
+     content: '';
     background-image: url("../media/Webp.net-resizeimage3.jpg");
-    background-position: bottom;
     background-repeat: no-repeat;
-    /* opacity: 0.5;
-    filter: alpha(opacity=50);  */
     background-size: cover;
-    background-position: top;
-    background-color: #4E49FD;
-    text-align: center;
+    background-position: center;
+    display: block;
     height: 100vh;
+    width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 1000ms;
+ }
+ .content {
+    /* background-position: bottom; */
+
+    /* background-color: #4E49FD; */
+    position: absolute;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 40px;   
 }
-/* #showcase::after {
-    content: '';
-    height: 100vh;
-    width: 100%;
-    background-image: url("../media/welcome-cover.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-} */
 /* Stylish */
 #showcase h1 {
-    font-size: 50px;
+    font-size: 2em;
     color: azure;
     line-height: 1.2;
 }
 #showcase p {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
     color: azure;
-    padding: 1em 0 3em 0;
-    text-align: right;
-}
-#showcase address {
-    color: azure;
+    padding: 1em 2em 3em 0;
     text-align: right;
 }
 #showcase .button {
-    font-size: 18px;
+    font-size: 1em;
     text-decoration: none;
     color: azure;
     background: #06C895;
     /* border: azure 1px solid; */
-    padding: 10px 20px;
+    padding: 8px 30px;
     border-radius: 10px 10px 10px 10px;
     margin-top: 10px;
 }
@@ -131,9 +126,9 @@ body {
     /* color: black; */
     /* box-shadow: 0 10px 80px #F7F7F7; */
 }
-#showcase img {
+/* #showcase img {
     height: auto;
-    width: 10%;
+    width: 25%;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
@@ -141,14 +136,16 @@ body {
     -webkit-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
     -moz-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
     box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
-}
+} */
 q {
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1em;
     color: azure;
     padding-bottom: 2em;
+    margin: 0 2em 0 2em;
 }
 .button {
-    padding: 5em;
+    padding: 2em;
 }
 /* .content {
     background-image: url(../media/welcome-cover.jpg);
@@ -183,6 +180,48 @@ q {
 }
 @media (max-width: 568px) {
     .navbar-nav { display: none;}
+    #showcase h1 {
+        font-size: 1.3em;
+        color: azure;
+        line-height: 1.2;
+    }
+        .content {
+            width: 100%;}
+        q {
+            text-align: center;
+            font-size: 0.8em;
+            color: azure;
+            padding-bottom: 2em;
+            margin: 0 2em 0 2em;
+            }
+        #showcase p {
+            text-align: center;
+            font-size: 0.5em;
+            color: azure;
+            padding: 1em 2em 5em 0;
+            text-align: right;
+            }
+        /* #showcase img {
+            height: auto;
+            width: 20%;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            border: 0px solid #000000;
+            -webkit-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+            -moz-box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+           box-shadow: 6px 3px 51px 5px rgba(191,200,235,1);
+            } */
+        #showcase .button {
+            font-size: 0.9em;
+            text-decoration: none;
+            color: azure;
+            background: #06C895;
+            /* border: azure 1px solid; */
+            padding: 8px 30px;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 10px;
+            }
 }
 
 @media (min-width: 568px) {
