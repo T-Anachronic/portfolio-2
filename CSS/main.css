@@ -11,11 +11,12 @@ body {
 .navbar {
     overflow: hidden;
     height: 63px;
+    z-index: 1;
 }
 .navbar a {
     float: right;
     display: block;
-    color: #290606;
+    color: azure;
     text-align: right;
     padding: 10px 14px;
     text-decoration: none;
@@ -29,7 +30,6 @@ body {
     align-items: right;
     right: 0;
     top: 6%;
-    width:;
     margin-top: -2.5em;
     padding-right: 15%;
 }
@@ -63,7 +63,7 @@ body {
     color: #06C895;
 }
 .side-nav .btn-close {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 22px;
     font-size: 36px;
@@ -76,44 +76,62 @@ body {
     bottom: 0;
     font-size: 3em;
 }
+.down-icon {
+    position: absolute;
+    bottom: -38px;
+    font-size: 1.5em;
+}
 
  /* Hero-Section */
  /* header  */
  .content {
      /* position: absolute; */
-     width: 40%;
+     width: 45%;
  }
+ header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(111, 101, 250, 0.699) 22%, rgba(114, 104, 249, 0.815) 37%, rgba(72, 66, 255, 0.863) 62%);
+    width: 100%; 
+}
+.navbar-nav, .side-nav, .content {
+    z-index: 1;
+}
  .hero-section {
      position: relative;
+     top: 0;
     background-image: url("../media/Webp.net-resizeimage2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* display: block; */
     height: 94.7vh;
     width: 100%;
  }
+ 
  #showcase {
     display: flex;
     flex-direction: column;
     justify-content: bottom; 
     align-items: center;
-    padding-top: 15em;
+    padding-top: 11.9em;
     
 }
 /* Stylish */
 #showcase h1 {
     font-size: 2em;
     color: azure;
-    line-height: 1.2;
+    line-height: 1.6;
     text-align: center;
-    padding: 1.4em;
+    padding: 2em 0 1.2em 0;
+    margin: 0;
 }
 #showcase p {
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: azure;
-    padding: 1em 10em 3em 0;
+    padding: 0.5em 1em 3em 0;
     text-align: right;
 }
 #showcase .button {
@@ -125,7 +143,7 @@ body {
     width: 20%;
     padding: 10px;
     border-radius: 10px 10px 10px 10px;
-    margin: 10px auto 0px auto;
+    margin: 0px auto 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,28 +153,18 @@ body {
     /* color: black; */
     /* box-shadow: 0 10px 80px #F7F7F7; */
 }
-q {
+.content q {
     text-align: center;
     line-height: 1.7em;
     font-size: 1em;
     color: azure;
     padding-bottom: 2em;
-    margin: 0 2em 0 2em;
+    margin: 0 5em 0 2em;
 }
 .button {
     padding: 2em;
 }
 
-header::after {
-    content: 'jhfgfgb';
-    display: block;
-    position: absolute;
-    top: 0; bottom: 0;
-    background-color: rgba(47, 44, 58, 0.589);
-    height: 94.7vh;
-    width: 100%;
-    z-index: 2;
-}
 
 /* -----------------------Main stylish------------------------- */
 #main {
@@ -189,14 +197,20 @@ header::after {
         right: 0;
         background-color: #06C895;
         margin: 1em;
+        z-index: 1;
         }
     .hero-section {
-        background-image: url("../media/resizeimage-formobile1.jpg");
+        position: relative;
+        top: 0;
+        background-image: url("../media/Webp.net-resizeimage2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        height: 100vh;
+        height: 94.7vh;
         width: 100%;
+        }
+    .navbar-nav, .side-nav {
+        z-index: 2;
     }
 
 
