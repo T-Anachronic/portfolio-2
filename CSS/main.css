@@ -70,12 +70,14 @@ body {
     margin-right: 50px;
 }
 /*Icons */
-.up-icon {
+/* .up-icon {
 	right: 20px;
-	position: fixed; /*Pour sortir l'élément du flux, on peut placer l'élément la ou on souhaite sur le plan vert et hori par rapport au bord de la fenetre*/
+	position: fixed; 
     bottom: 0;
     font-size: 3em;
-}
+} */
+
+/*Position:fixed pour sortir l'élément  du flux, on peut placer l'élément la ou on souhaite sur le plan vert et hori par rapport au bord de la fenetre*/
 .down-icon {
     position: absolute;
     bottom: -38px;
