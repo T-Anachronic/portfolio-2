@@ -38,6 +38,9 @@ body {
     color: black;
     border-radius: 10px 10px 10px 10px;
 }
+#side-menu {
+    padding: 0;
+}
 .side-nav {
     height: 100%;
     width: 0%;
@@ -193,7 +196,10 @@ body {
 @media (max-width: 568px) {
     .navbar-nav { display: none;}
     .content {
-        width: 100%;}
+        width: 90%;
+        /* padding: 0px 0 590px 0; */
+    }
+        
     .open-slide a {
         position: fixed;
         right: 0;
@@ -213,6 +219,36 @@ body {
         }
     .navbar-nav, .side-nav {
         z-index: 2;
+    }
+
+    #showcase h1 {
+        font-size: 2em;
+        color: azure;
+        line-height: 1.6em;
+        text-align: center;
+        padding: 0em 0 2em 0;
+        margin: 0;
+    }
+    #showcase .button {
+        display: block;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: azure;
+        background: #06C895;
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content q {
+        line-height: 1.3em;
+        font-size: 1.3em;
+        color: azure;
+        padding-bottom: 2em;
+        margin: 0 5em 0 2em;
     }
 
 
