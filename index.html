@@ -30,18 +30,20 @@
                 </a>
             </span>
             <ul class="navbar-nav" style="list-style-type:none">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#work">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#skills">Mes compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                
                 <!-- <li><a href="#">Contact</a></li> -->
             </ul>
         </nav>
 
         <div id="side-menu" class="side-nav" onclick="closeSlideMenu()">
             <a href="#" class="btn-close">&times;</a>
-            <a href="#services">Services</a>
-            <a href="#work">Portfolio</a>
-            <a href="#about">About</a>
+            <a href="#about">A propos</a>
+            <a href="#skills">Mes compétences</a>
+            <a href="#portfolio">Portfolio</a>
+            
             <!-- <a href="#">Contact</a> -->
         </div>
 
@@ -51,18 +53,18 @@
                 <h1>UI/UX Designer <br>Front-End Web Developer</h1>
                 <q>La perfection est atteinte, non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il
                     n'y a plus rien à retirer.</q><p>Antoine de Saint-Exupery</p>
-                <a href="#contact" class="button">Get in Touch</a>
+                <a href="#call" class="button">Get in Touch</a>
             </div>
             <div id="up">
                 <div class="down-icon">
-                    <a href="#services" title="Section suivante"><i class="fas fa-angle-down"></i></a>
+                    <a href="#about" title="Section suivante"><i class="fas fa-angle-down"></i></a>
                 </div>
             </div>
         </section>
     </header>
     <main id="main">
-        <section id="services">
-            <h1>Services</h1>
+        <section id="about">
+            <h1>A propos</h1>
             <div class="process-1">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
                 distinctio sequi quibusdam similique rem obcaecati accusantium error 
@@ -82,13 +84,13 @@
                 temporibus, nihil consequatur.
             </div>
         </section>
-        <section id="work">
-            <h1>Portfolio</h1>
+        <section id="skills">
+            <h1>Mes compétences</h1>
             <div class="work">
             </div>
         </section>
-        <section id="about">
-            <h1>About Me</h1>
+        <section id="portfolio">
+            <h1>Mon portfolio</h1>
             <div class="about-1">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis 
                     distinctio sequi quibusdam similique rem obcaecati accusantium error 
@@ -108,8 +110,49 @@
                     temporibus, nihil consequatur.
                 </div>
         </section>
-        <section id="contact">
-            <h1>Get in touch</h1>
+        <section id="call">
+            <h1>Entrer en contact</h1>
+            <div id="container">
+                <!-- <h1 class="brand">Front-End web Developer</h1> -->
+                <div class="wrapper">
+                    <div class="company-info">
+                        <h3>Développeur Front-End</h3>
+                        <ul>
+                            <li><i class="fas fa-map-pin"></i>44 rue du Codeur</li>
+                            <li><i class="fas fa-mobile"></i>(33) 555 555 555</li>
+                            <li><i class="fas fa-envelope"></i>test@test.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h3>Dites Bonjour</h3>
+                        <form action="https://formspree.io/comocu@2mailnext.com" method="POST">
+                            <p>
+                                <label>Nom</label>
+                                <input type="text" name="name">
+                            </p>
+                            <p>
+                                <label>Prénom</label>
+                                <input type="text" name="last_name">
+                            </p>
+                            <p>
+                                <label>Adresse mail</label>
+                                <input type="text" name="email">
+                            </p>
+                            <p>
+                                <label>Téléphone</label>
+                                <input type="text" name="phone">
+                            </p>
+                            <p class="full">
+                                <label> Votre message</label>
+                                <textarea name="message" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button>Envoyer</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
